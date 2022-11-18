@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: rgb(53, 48, 48);
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0% 0%;
+}
+
+header h1 {
+  padding-left: 15px;
+  font-size: 50px;
+  color: #2c3e50;
+  font-weight: 200;
+  margin: 0%;
+}
+
+header img {
+  height: 60px;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 0%;
+}
+
+.ownerText {
+  display: inline-block;
+  margin: 0% 0% 5%;
+}
+
+.ownerText a {
+  margin-left: 7px;
+  text-decoration: none;
+  font-weight: 900;
+  color: #34495e;
+}
+
+.ownerText a:hover {
+  transition: 0.4s;
+  color: #0b66c3;
+}
+
+.content {
+  min-width: 100vw;
+}
+
+.form {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 68%;
+  margin-bottom: 3%;
+}
+
+.list {
+  display: flex;
+  padding: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 20px;
+  color: #2c3e50;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2c3e50;
+  padding: 5px;
+  background-color: rgba(11, 103, 195, 0);
+}
+
+.submit-button {
+  border: 0px solid;
+  background-color: #ffffff00;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.tabSection {
+  margin: auto;
+  width: 70%;
+}
+
+.add-icon {
+  height: 23px;
+  padding: 4px;
+  width: 23px;
+}
+
+.add-icon:hover {
+  padding: 4px;
+  border: 0px solid black;
+  border-radius: 50%;
+  background-color: #1aff005e;
+}
+
+.task {
+  background-color: #537597;
+  width: 70%;
+  padding: 10px;
+  margin: 7px 0px 0px;
+  overflow-x: hidden;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.task div {
+  display: inline-block;
+  max-width: 87%;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+.date{
+  color: rgba(255, 255, 255, 0.338);
+  margin: 0%;
+  line-height: 8px;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 0px 8px 8px;
+  background-color: #537597;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.icon {
+  float: right;
+  padding: 5px;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.icon:hover {
+  background-color: rgba(255, 0, 0, 0.882);
+  border-radius: 50%;
+}
+
+.edit:hover {
+  background-color: rgba(0, 145, 255, 0.882);
+}
+
+.done:hover {
+  background-color: rgba(3, 209, 0, 0.882);
+}
+
+.edit-todo {
+  width: 87%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected {
+  color: #fff;
+  background-color: #6c6777;
+}
+
+.clear {
+  float: right;
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+  width: 170px;
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.clear:hover {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  header {
+    margin-top: 50px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    padding-left: 5px;
+  }
+
+  header img {
+    height: 28px;
+  }
+
+  .owner {
+    font-size: 9px;
+  }
+
+  .form {
+    width: 86%;
+    margin-top: 50px;
+  }
+
+  .add-icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  input {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .tabSection {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .tabSection button {
+    font-size: 10px;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .task {
+    width: 90%;
+    padding: 6px;
+    margin: 5px 5px 0px;
+    border-radius: 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .task div {
+    max-width: 82%;
+  }
+
+  .date{
+    color: rgba(255, 255, 255, 0.338);
+    line-height: 5px;
+    font-weight: 700;
+    font-size: 9px;
+    padding: 0px 8px 8px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+  }
+
+  .icon {
+    float: right;
+    padding: 3px;
+    margin-right: 9px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .edit-todo {
+    width: 82%;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .icon:hover {
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  .edit:hover {
+    background-color: rgba(0, 145, 255, 0);
+  }
+
+  .done:hover {
+    background-color: rgba(3, 209, 0, 0);
+  }
+
+  .clear {
+    color: rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(255, 0, 0);
+  }
+
+  .clear:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(255, 0, 0);
+  }
+}
